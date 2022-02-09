@@ -5,21 +5,19 @@
 #include <stdio.h>
 
 int main() {
-  int distance,amount;
 
-  printf("enter the distance van has travelled :");
-  scanf("%d",&distance);
+  int mark1,mark2;
+  float average;
 
-  if(distance<=30)
-  {
-    amount=distance*50;
-  }
-  else if(distance>30)
-  {
-    amount=30*50+(distance-30)*40;
-  }
+  printf("enter the first mark :");
+  scanf("%d",&mark1);
 
-  printf("amount to be paid :%d",amount);
+  printf("enter the second mark :");
+  scanf("%d",&mark2);
+
+  average=(mark1+mark2)/2.0;
+
+  printf("Average mark is %.2f",average);
 
   return 0;
 }
